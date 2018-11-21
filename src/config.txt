@@ -14,7 +14,7 @@ Min units consumed:
 Max units consumed:
 Fixed units consumed: 2
 Probability switched on:
-Cycle length: 24/3
+Cycle length: 24/24
 
 name: Digital clock
 subclass: CyclicFixed
@@ -94,11 +94,8 @@ meter: water
 Min units consumed: 5
 Max units consumed: 20
 Fixed units consumed: 
-Cycle length: 
 Probability switched on: 1 in 12
-
-
-
+Cycle length: 
 
 name: Kitchen taps
 subclass: RandomVaries
@@ -109,23 +106,20 @@ Fixed units consumed:
 Probability switched on: 1 in 24
 Cycle length: 
 
-
-
-
-
-
 name: Wind turbine
+
+
+
+
 subclass: RandomVaries
 meter: electric
+
+
 Min units consumed: -1
 Max units consumed: -25
 Fixed units consumed: 
 Probability switched on: 1 in 2
 Cycle length: 
-
-
-
-
 
 
 

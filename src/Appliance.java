@@ -25,8 +25,9 @@ public abstract class Appliance {
   public int getMeterType(){
     return meterType;
   }
-  public void setMeterType(int i){
-    meterType=i;
+  /** @param type An integer representing the type of meter this appliance uses*/
+  public void setMeterType(int type){
+    meterType=type;
   }
   /** @param consume A float reporting the number of units consumed in 1hr*/
   protected void tellMeterToConsumeUnits(float consume){

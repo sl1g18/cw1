@@ -13,8 +13,10 @@ public class BatteryMeter extends Meter{
   public double report(){
     float unitsFromBat = useBattery();
     double cost = calculateCost();
+    System.out.println("-- Meter for "+getUtility()+" --");
     System.out.println("Power used from battery: "+unitsFromBat);
     System.out.println("Power used from main: "+getMeterReading());
+    System.out.println(" ");
     setMeterReading(0);
     return cost;
   }

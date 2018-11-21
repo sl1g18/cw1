@@ -29,12 +29,12 @@ public class Meter {
   }
   /** @return A double containing the cost of using [meterReading] units*/
   protected double calculateCost(){
-    return meterReading*unitCost;
+    return (double)meterReading*unitCost;
   }
   /** @return A doublec containing the cost of using [meterReading] units*/
   public double report(){
     double cst = calculateCost();
-    System.out.println(utilityName+" "+meterReading+" "+cst);
+    //System.out.println(utilityName+" "+meterReading+" "+cst);
     meterReading=0;
     return cst;
   }
